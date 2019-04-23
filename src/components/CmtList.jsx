@@ -16,7 +16,7 @@ export default class CmtList extends React.Component {
 
     render() {
         return <div>
-            <h1>评论列表</h1>
+            <h1 style={ {color:'red',fontSize:'20px',fontWeight:200,textAlign:'center'} }>评论列表</h1>
             {this.state.CommentList.map(item => <CmtItem {...item} key={item.id}></CmtItem>)}
         </div>
     }
